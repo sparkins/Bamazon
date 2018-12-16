@@ -92,7 +92,7 @@ function purchaseItems() {
                     // console.log ("Old Total Sales Amount $"+totalSales);
                     totalSales += customerCost;
                     console.log("New Total Sales Amount $" + totalSales + "\r\n");
-                    var newStockQuantity = parseInt(StockQuantity - answer.itemPurchased);
+                    var newStockQuantity = parseInt(StockQuantity - answer.quantity);
                     console.log("New Stock Amount: " + newStockQuantity + "\r\n");
                     var query = "UPDATE products SET stock_quantity = ?, product_sales = ? WHERE item_id = ?;"
                     connection.query(query, [newStockQuantity, totalSales, itemId], function (err, res) {
