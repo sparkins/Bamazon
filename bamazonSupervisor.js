@@ -71,7 +71,7 @@ function viewProductsSalesByDept() {
 
         for (var i = 0; i < res.length; i++) {
             // Calculate the Revenue by taking the Overhead from Departments table and Total Sales from the Products table.
-            deptRevenue =(res[i].Sales_To_Date - parseFloat(res[i].Over_Head));
+            deptRevenue = parseFloat(res[i].Sales_To_Date - parseFloat(res[i].Over_Head)).toFixed(2);
             // Create an object to contain the data from mysql and then push for each department
             deptSalesData = {Department: res[i].Department, Sales_To_Date: res[i].Sales_To_Date, Over_Head: res[i].Over_Head, Revenue: parseFloat(deptRevenue)};
             productSalesList.push(deptSalesData);     

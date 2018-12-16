@@ -79,7 +79,7 @@ function purchaseItems() {
                 var itemPrice = res[0].item_price;
                 var totalSales = res[0].Total_Sales;
 
-                console.log("\r\nYou have chosen to purchase " + answer.quantity + "x " + itemPurchased + "\r\n")
+                console.log("\r\nYou have chosen to purchase " + answer.quantity + "x " + itemPurchased + "/s\r\n")
 
                 if (answer.quantity > StockQuantity) {
                     console.log("Unfortunately we don't have enough " + itemPurchased + "'s in stock.  Please place a new order\r\n");
@@ -87,7 +87,7 @@ function purchaseItems() {
                 }
                 else {
                     console.log("Congratulations, we have successfully placed your order!\r\n");
-                    var customerCost = answer.itemPurchased * itemPrice;
+                    var customerCost = answer.quantity * itemPrice;
                     console.log("The cost of your order is $" + customerCost + "\r\n")
                     // console.log ("Old Total Sales Amount $"+totalSales);
                     totalSales += customerCost;
