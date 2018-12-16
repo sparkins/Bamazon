@@ -1,9 +1,10 @@
-# Bamazon:  Week13-Homework:  A node, mysql amazon like store application
+# Bamazon:  
+# A node, mysql amazon like store application
 ---
 This homework was to allow us to demonstrate our skills with node.js and mysql.  THis app is an Amazon-like storefront. The app will take in orders from customers and deplete stock from the store's inventory. As a bonus task, you can program your app to track product sales across your store's departments and then provide a summary of the highest-grossing departments in the store.
 
 ---
-##Challenge #1: Customer View (Minimum Requirement)
+## Challenge #1: Customer View (Minimum Requirement)
 
 * Create a MySQL Database called bamazon.
 * Create a Table inside of that database called products.
@@ -25,7 +26,7 @@ If not, the app should log a phrase like Insufficient quantity!, and then preven
 However, if your store does have enough of the product, you should fulfill the customer's order.
 
 ---
-##Challenge #2: Manager View (Next Level)
+## Challenge #2: Manager View (Next Level)
 
 * Create a new Node application called bamazonManager.js. Running this application will:
     - List a set of menu options:
@@ -35,7 +36,7 @@ However, if your store does have enough of the product, you should fulfill the c
     - Add New Product
 
 ---
-##Challenge #3: Supervisor View (Final Level)
+## Challenge #3: Supervisor View (Final Level)
 
 * Create a new MySQL table called departments. Your table should include the following columns:
     - department_id
